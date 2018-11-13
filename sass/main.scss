@@ -1,9 +1,9 @@
-@import "abstracts/mixins.scss";
 @import "abstracts/variables.scss";
-
-@import "base/base.scss";
+@import "abstracts/mixins.scss";
 @import "base/animation.scss";
 @import "base/typography.scss";
+@import "base/base.scss";
+
 
 @import "pages/home.scss";
 
@@ -12,3 +12,4 @@
 @import "layout/navigation.scss";
 
 @import "component/searchbar.scss";
+@import "component/events.scss";

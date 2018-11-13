@@ -16,6 +16,7 @@
         }
     }
     position: absolute;
+    z-index: 100;
 }
 
 .header {
@@ -49,7 +50,7 @@
         top: -1rem;
         z-index: -1;
         left: -25%;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(../images/banner.jpg);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(26, 26, 26, 0.1)), url(../images/banner.jpg);
         background-attachment: fixed;
         border-bottom-left-radius: 50% 50%;
         border-bottom-right-radius: 50% 50%;

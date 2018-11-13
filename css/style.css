@@ -1,3 +1,28 @@
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0); } }
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1); }
+  10%, 20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+.nav {
+  font-family: 'Poppins', sans-serif; }
+
 * {
   box-sizing: inherit;
   margin: 0px;
@@ -9,10 +34,6 @@ body {
 
 html {
   font-size: 62.5%; }
-
-a {
-  text-decoration: none;
-  color: #000; }
 
 .noselect {
   -webkit-touch-callout: none;
@@ -36,14 +57,11 @@ input[type=number]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0; }
 
-/*font-family: 'Roboto', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
-.nav {
-  font-family: 'Poppins', sans-serif; }
+a {
+  text-decoration: none;
+  color: #000; }
 
-.section-search {
+.section-search, .section-events {
   margin: 10rem 0;
   padding: 1rem; }
 
@@ -54,7 +72,8 @@ font-family: 'Poppins', sans-serif;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
-  position: absolute; }
+  position: absolute;
+  z-index: 100; }
   .nav__links {
     display: flex;
     justify-content: space-around;
@@ -91,7 +110,7 @@ font-family: 'Poppins', sans-serif;
     top: -1rem;
     z-index: -1;
     left: -25%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(../images/banner.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(26, 26, 26, 0.1)), url(../images/banner.jpg);
     background-attachment: fixed;
     border-bottom-left-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
@@ -145,5 +164,72 @@ font-family: 'Poppins', sans-serif;
     top: 0; }
   .search__button:hover {
     cursor: pointer; }
+
+.event__box {
+  overflow: hidden;
+  width: 40rem;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+  transition: all .3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .event__box:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+.event__partition {
+  background: #fff;
+  width: 150%;
+  left: -25%;
+  height: 100%;
+  position: absolute;
+  border-top-left-radius: 60% 30%;
+  border-top-right-radius: 60% 30%;
+  transform: translateY(-50%);
+  top: 38rem; }
+.event__img {
+  width: 100%; }
+  .event__img img {
+    width: 100%; }
+.event__text {
+  padding: 2rem;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  background: #fff; }
+  .event__text-heading {
+    margin-bottom: 5rem;
+    font-size: 3rem; }
+  .event__text-details {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .event__text-details__location, .event__text-details__date {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      margin: 2rem 0; }
+      .event__text-details__location i, .event__text-details__date i {
+        font-size: 1.8rem; }
+      .event__text-details__location span, .event__text-details__date span {
+        margin-left: 1.2rem; }
+    .event__text-details__price {
+      background: #3d5afe;
+      font-size: 2rem;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      transition: all .3s; }
+      .event__text-details__price:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        animation: tada .5s; }
+.event__tags {
+  margin-top: 2rem; }
+  .event__tags a {
+    background: rgba(179, 182, 244, 0.62);
+    color: #0031ca;
+    font-size: 1.2rem;
+    letter-spacing: 2.5px;
+    margin: 1rem .2rem;
+    padding: .3rem 1rem;
+    border: 1px solid #0031ca;
+    border-radius: 300px; }
 
 /*# sourceMappingURL=style.css.map */
