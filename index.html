@@ -8,10 +8,47 @@
     <link rel="shotcut icon" type="img/png" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Poppins:300,400,500,600,700,900|Roboto:300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
     <title>Network After Work</title>
+    <style>
+        .slider {
+            width: 60%;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -39,9 +76,10 @@
         </div>
     </header>
     <section class="section-search">
+        <div class="section__heading">Events Near You</div>
         <div class="search__block">
             <select name="" id="" class="search__city">
-                <option value="">Search City</option>
+                <option value="0">Search City</option>
                 <option value="">Akron</option>
                 <option value="">Albany</option>
                 <option value="">Boise</option>
@@ -52,33 +90,271 @@
         </div>
     </section>
     <section class="section-events">
-        <div class="event__box">
-            <div class="event__img">
-                <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
-            </div>
-            
-                    <div class="event__partition"></div>
-            <div class="event__text">
-                <h1 class="event__text-heading">St. Louis at Skybox</h1>
-                <hr>
-                <div class="event__text-details">
-                    <div class="event__details-left">
-                        <div class="event__text-details__location">
-                        <i class="material-icons">location_on</i><span>St. Louis.</span>
-                    </div>
-                    <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
-                    </div>
-                    </div>
-                    <a href="#" class="event__text-details__price">$14 - $15</a>
+
+    <div class="regular slider">
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
                 </div>
-                <hr>
-                <div class="event__tags">
-                    <a href="#">speed</a>
-                    <a href="#">speed</a>
-                    <a href="#">speed</a>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="event__box">
+                <div class="event__img">
+                    <img src="images/Screen%20Shot%202018-10-04%20at%209.43.02%20AM.png" alt="event1">
+                </div>
+
+                <div class="event__partition"></div>
+                <div class="event__text">
+                    <h1 class="event__text-heading">St. Louis at Skybox</h1>
+                    <hr>
+                    <div class="event__text-details">
+                        <div class="event__details-left">
+                            <div class="event__text-details__location">
+                                <i class="material-icons">location_on</i><span>St. Louis.</span>
+                            </div>
+                            <div class="event__text-details__date"><i class="material-icons">calendar_today</i><span>Nov 13, 2018, 06:00 PM</span>
+                            </div>
+                        </div>
+                        <a href="#" class="event__text-details__price">$14 - $15</a>
+                    </div>
+                    <hr>
+                    <div class="event__tags">
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                        <a href="#">speed</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </section>
     <section class="section-sponsors">
         Section Sponsors.
@@ -89,6 +365,18 @@
     <section class="section-contact">
         Contacts.
     </section>
+
 </body>
+<script>
+    $(function() {
+        $(".regular").slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+
+</script>
 
 </html>

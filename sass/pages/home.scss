@@ -1,4 +1,30 @@
-.section-search,.section-events{
+.section-search,
+ {
     margin: 10rem 0;
     padding: 1rem;
+}
+.section-events {
+margin: 5rem 0;
+}
+.section {
+    &__heading {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
+        position: relative;
+        color: $color-secondary-dark;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 105%;
+            height: .1rem;
+            width: 5rem;
+            background: $color-black;
+        }
+    }
 }
