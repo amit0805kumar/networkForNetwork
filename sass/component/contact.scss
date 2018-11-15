@@ -1,0 +1,73 @@
+.contact {
+    &__row {
+        width: 95%;
+        height: 40rem;
+        display: flex;
+        border-radius: 6px;
+        background: $color-white;
+        overflow: hidden;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        //        margin: 2rem 3rem;
+    }
+    &__form,
+    &__subscribe {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        & input[type=text],
+        input[type=email],
+        textarea {
+            border: none;
+            border-bottom: 2px solid $color-black;
+            width: 70%;
+            &::-webkit-input-placeholder {
+                font-family: 'Roboto', sans-serif;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        & input[type=button] {
+            border: none;
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            padding: 1rem 4rem;
+            transition: all .3s;
+            
+            font-family: "Roboto", sans-serif;
+            border-radius: 300px;
+            &:hover {
+                cursor: pointer;
+                 box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+                letter-spacing: 1.1px;
+                transform: scale(1.04);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__subscribe input[type=email] {
+        margin: 6rem 0;
+    }
+    &__form {
+        border-right: 2px solid $color-grey;
+        & input[type=text],
+        input[type=email],
+        textarea {
+            margin: 2rem 0;
+        }
+    }
+    &__heading {
+        font-family: "Poppins", sans-serif;
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    &__subHeading {
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 2rem;
+
+    }
+}

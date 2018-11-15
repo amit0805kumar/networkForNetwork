@@ -1,0 +1,24 @@
+footer{
+    background: $color-grey-dark;
+    text-align:center;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: $color-white;
+    padding: 3rem 0;
+    position: relative;
+    z-index: 5;
+    &__dom{
+        content: '';
+        background: $color-grey-dark;
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        width: 110%;
+        height: 100%;
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        z-index: -1;
+    }
+}

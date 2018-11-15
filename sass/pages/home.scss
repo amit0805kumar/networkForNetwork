@@ -1,6 +1,14 @@
+.section-contact {
+    padding: 3rem 5rem;
+    margin-top: 10rem;
+    width: 100%;
+    position: relative;
+}
+
 .section-search,
 .section-sponsors,
-.section-counts{
+.section-counts,
+ {
     margin: 10rem 0;
     padding: .1px;
     width: 100%;
@@ -9,6 +17,12 @@
 
 .section-events {
     margin: 5rem 0;
+
+}
+
+.section-contact {
+    margin-top: 20rem;
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 }
 
 .section {
