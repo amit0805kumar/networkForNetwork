@@ -1,0 +1,23 @@
+.sponsor {
+ 
+    &__row {
+        display: flex;
+        width: 60%;
+        overflow: hidden;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    &__col {
+        width: 50%;
+        height: 20rem;
+        overflow: hidden;
+        position: relative;
+        & img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+ 
+}
